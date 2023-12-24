@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=PT+Sans:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f7fdfc;
+}
+
+.main-container {
+  margin: auto;
+  flex-wrap: wrap;
+  display: inline flex;
+  gap: 120px;
+  max-width: 100%;
+  /* width: 100%; */
+}
+
+.left-content {
+  margin: auto;
+  max-width: fit-content;
+  width: 100%;
+  padding-top: 110px;
+}
+
+.left-content img {
+  width: 77px;
+  height: 80px;
+  margin-bottom: 35px;
+  position: relative;
+  right: 9px;
+}
+
+.header {
+  color: #000b0a;
+  line-height: 50px;
+  word-wrap: break-word;
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+.note {
+  color: #737373;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  word-wrap: break-word;
+  display: block;
+}
+
+.mobiles {
+  display: none;
+}
+
+.user-firstName-form input,
+.user-lastName-form input,
+.user-gender-form select,
+.user-form-dob input,
+.user-weight-form input,
+.user-height-form input {
+  width: 270px;
+  height: 45px;
+  padding: 10px;
+  font-weight: 400px;
+}
+
+
+.user-activity-form select,
+.user-password-form input {
+  width: 560px;
+  height: 48px;
+}
+
+label {
+  line-height: 40px;
+  /* font-weight: 900px; */
+  font-size: 16px;
+  letter-spacing: 0.1px;
+  /* font-family: sans-serif; */
+  font-family: "PT Sans", sans-serif;
+}
+
+button {
+  width: 560px;
+  height: 48px;
+  margin-top: 25px;
+  background-color: #2ec4b6;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.2px;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 25px;
+  border: 5px;
+}
+
+.formUser {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.password {
+  display: inline-flex;
+  /* padding-right: -56px; */
+}
+
+.password i {
+  margin-left: -40px;
+  padding-top: 15px;
+}
+
+.policy-style {
+  color: #2ec4b6;
+  font-weight: 900px;
+  font-size: 14px;
+  text-decoration: underline;
+  line-height: 25px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+}
+
+.right-content {
+  max-width: 620px;
+  width: 100%;
+  height: 640px;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 6px;
+  border: 1px solid none;
+  box-shadow: 8px 9px 8px 9px #ecebee;
+}
+
+.paragraph {
+  text-align: center;
+  font-weight: 500px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "PT Sans", sans-serif;
+  /* line-height: 25px; */
+}
+
+/* Responsiveness for mobile */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: #f7fdfc;
+  }
+
+  .main-container {
+    margin: auto;
+    flex-direction: column;
+    display: block;
+    /* gap: 120px; */
+    /* max-width: 100%; */
+    /* width: 100%; */
+  }
+
+  
+
+  .left-content img {
+    width: 38.6px;
+    height: 40px;
+    margin-bottom: 35px;
+    position: relative;
+    right: 3px;
+  }
+
+  .left-content{
+    margin-top: -100px;
+  }
+
+  .right-content {
+    max-width: 350px;
+    width: 100%;
+    height: 870px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 6px;
+  }
+
+  .formUser {
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+
+  .user-activity-form select,
+  .user-password-form input {
+    width: 270px;
+    height: 48px;
+  }
+
+  button {
+    width: 270px;
+  }
+
+  .paragraph {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+
+  .note {
+    display: none;
+  }
+
+  .mobiles {
+    color: #737373;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    word-wrap: break-word;
+    padding-bottom: 35px;
+    padding-right: 60px;
+    display: block;
+  }
+
+  .header {
+    color: #000b0a;
+    line-height: 50px;
+    word-wrap: break-word;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-family: "PT Sans", sans-serif;
+    padding-right: 60px;
+  }
+
+  
+
+  .user-firstName-form input,
+  .user-lastName-form input,
+  .user-gender-form select,
+  .user-form-dob input,
+  .user-weight-form input,
+  .user-height-form input {
+    width: 270px;
+    height: 45px;
+    padding: 10px;
+    font-weight: 400px;
+    font-size: 14px;
+  }
+
+  label {
+    line-height: 40px;
+    /* font-weight: 900px; */
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    /* font-family: sans-serif; */
+    font-family: "PT Sans", sans-serif;
+  }
+}
